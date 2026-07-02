@@ -127,4 +127,48 @@ function filterSelection(category){
     });
 
 }
+function openImage(image){
+
+    document.getElementById("imageModal").style.display="flex";
+
+    document.getElementById("modalImage").src=image;
+
+}
+
+function closeImage(){
+
+    document.getElementById("imageModal").style.display="none";
+
+}
+const serviceData = {
+    web: {
+        title: "Website Development",
+        description: "Responsive, SEO-friendly and modern business websites."
+    },
+    graphic: {
+        title: "Graphic Design",
+        description: "Logos, banners, flyers, social media and branding designs."
+    },
+    photography: {
+        title: "Photography",
+        description: "Wedding, event, product and portrait photography."
+    }
+};
+
+function openService(service){
+
+    document.getElementById("serviceTitle").innerText =
+    serviceData[service].title;
+
+    document.getElementById("serviceDescription").innerText =
+    serviceData[service].description;
+
+    document.getElementById("serviceModal").style.display="flex";
+}
+
+document.querySelector(".close-service").onclick=function(){
+
+    document.getElementById("serviceModal").style.display="none";
+
+}
 

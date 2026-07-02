@@ -129,7 +129,7 @@ gtag('config', 'G-CSVHPPVVKR');
     <section id="services" class="services" data-aos="fade-up"></section>
     <h2>Our Services</h2>
     <div class="service-container">
-        <a href="services/web-development.html" class="service-link">
+        <a href="services/web-development.html" class="service-link" onclick="event.preventDefault(); openService('web')">
             <div class="service-card">
                 <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Website Development">
                 <div class="card-content">
@@ -240,7 +240,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
         <a href="services/web-development.html" class="portfolio-link">
             <div class="portfolio-card website">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Business Website Project">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Business Website Project" onclick="event.preventDefault(); openImage(this.src)">
                 <div class="portfolio-content">
                     <h3>Business Website</h3>
                     <p>Modern Responsive Website</p>
@@ -250,7 +250,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
         <a href="services/graphic-design.html" class="portfolio-link">
             <div class="portfolio-card design">
-                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Graphic Design Project">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Graphic Design Project" onclick="event.preventDefault(); openImage(this.src)">
                 <div class="portfolio-content">
                     <h3>Brand Identity</h3>
                     <p>Creative Graphic Design</p>
@@ -260,7 +260,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
         <a href="services/branding.html" class="portfolio-link">
             <div class="portfolio-card design">
-                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="Branding Project">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="Branding Project" onclick="event.preventDefault(); openImage(this.src)">
                 <div class="portfolio-content">
                     <h3>Branding Project</h3>
                     <p>Visual Identity & Strategy</p>
@@ -270,7 +270,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
         <a href="services/photography.html" class="portfolio-link">
             <div class="portfolio-card photo">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Photography Project">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Photography Project" onclick="event.preventDefault(); openImage(this.src)">
                 <div class="portfolio-content">
                     <h3>Photography Showcase</h3>
                     <p>Professional Event Photography</p>
@@ -280,7 +280,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
         <a href="services/videography.html" class="portfolio-link">
             <div class="portfolio-card video">
-                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Videography Project">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Videography Project" onclick="event.preventDefault(); openImage(this.src)">
                 <div class="portfolio-content">
                     <h3>Promo Video</h3>
                     <p>Professional Videography</p>
@@ -290,7 +290,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
         <a href="services/photo-editing.html" class="portfolio-link">
             <div class="portfolio-card photo">
-                <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=800&q=80" alt="Photo Editing Project">
+                <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=800&q=80" alt="Photo Editing Project" onclick="event.preventDefault(); openImage(this.src)">
                 <div class="portfolio-content">
                     <h3>Photo Retouching</h3>
                     <p>Creative Editing & Enhancement</p>
@@ -301,6 +301,10 @@ gtag('config', 'G-CSVHPPVVKR');
     </div>
 
 </section>
+
+<a href="portfolio/portfolio.html" class="btn">
+    View All Projects →
+</a>
 
 <section class="about" id="about">
 
@@ -419,47 +423,46 @@ gtag('config', 'G-CSVHPPVVKR');
 
 <footer class="footer">
 
-    <h2>SA CREATIVE HUB</h2>
+    <div class="footer-container">
 
-    <p>Create • Design • Develop</p>
+        <div class="footer-logo">
+            <h2>SA Creative Hub</h2>
+            <p>Create • Design • Develop</p>
+        </div>
 
-    <div class="footer-links">
+        <div class="footer-links">
+            <h3>Quick Links</h3>
 
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
+            <a href="../index.html">Home</a>
+            <a href="../index.html#services">Services</a>
+            <a href="../index.html#portfolio">Portfolio</a>
+            <a href="../index.html#contact">Contact</a>
+        </div>
 
-    </div>
+        <div class="footer-services">
+            <h3>Our Services</h3>
 
-    <div class="social-icons">
+            <p>Website Development</p>
+            <p>Graphic Design</p>
+            <p>Photography</p>
+            <p>Videography</p>
+            <p>Branding</p>
+        </div>
 
-        <a href="https://web.facebook.com/profile.php?id=61591672286391" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/s.arularasi_2705/" target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.tiktok.com/@sa_creative_hub" target="_blank">
-            <i class="fab fa-tiktok"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/arularasi-sivanathan-ab0798407" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://wa.me/94740069558" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="https://wa.me/94740361725" target="_blank">
-            <i class="fab fa-whatsapp"></i>
-        </a>
+        <div class="footer-contact">
+            <h3>Contact</h3>
 
+            <p>Email:https://maps.app.goo.gl/tVfyp1QKACBjHCSG7</p>
+            <p>Jaffna, Sri Lanka</p>
+        </div>
 
     </div>
 
     <hr>
 
-    <p>© 2026 SA CREATIVE HUB. All Rights Reserved.</p>
+    <p class="copyright">
+        © 2026 SA Creative Hub. All Rights Reserved.
+    </p>
 
 </footer>
 
@@ -484,6 +487,38 @@ gtag('config', 'G-CSVHPPVVKR');
 </div>
 
 <div class="cursor"></div>
+
+<div id="imageModal" class="image-modal">
+
+    <span class="close-modal" onclick="closeImage()">&times;</span>
+
+    <img id="modalImage">
+
+</div>
+
+<div id="serviceModal" class="service-modal">
+
+    <div class="service-modal-content">
+
+        <span class="close-service">&times;</span>
+
+        <h2 id="serviceTitle"></h2>
+
+        <p id="serviceDescription"></p>
+
+        <a href="#contact" class="btn">Get Quote</a>
+
+    </div>
+
+</div>
+
+<a href="https://wa.me/94740361725"
+   class="whatsapp"
+   target="_blank">
+
+    <img src="images/whatsapp.png" alt="WhatsApp">
+
+</a>
 
 </body>
 </html>
