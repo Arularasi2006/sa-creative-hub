@@ -129,34 +129,96 @@ gtag('config', 'G-CSVHPPVVKR');
     <section id="services" class="services" data-aos="fade-up"></section>
     <h2>Our Services</h2>
     <div class="service-container">
-        <div class="card">
-            <h3>Customer Review & Rating</h3>
-            <p>Professional review and rating support for your creative work.</p>
-        </div>
-        <div class="card">
-            <h3>CV Creation</h3>
-            <p>Clean and attractive CV layouts tailored for your career goals.</p>
-        </div>
-        <div class="card">
-            <h3>Frame Design</h3>
-            <p>Creative frame designs for photos, posters, and presentations.</p>
-        </div>
-        <div class="card">
-            <h3>Logo Design</h3>
-            <p>Unique and modern logo concepts that represent your brand.</p>
-        </div>
-        <div class="card">
-            <h3>Poster Design</h3>
-            <p>Eye-catching posters for events, promotions, and campaigns.</p>
-        </div>
-        <div class="card">
-            <h3>Photo Editing</h3>
-            <p>Professional photo enhancement and retouching for stunning results.</p>
-        </div>
-        <div class="card">
-            <h3>Photography</h3>
-            <p>Professional photography services for events, products, and portraits with expert lighting and composition.</p>
-        </div>
+        <a href="services/web-development.html" class="service-link">
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Website Development">
+                <div class="card-content">
+                    <h3>Website Development</h3>
+                    <p>Modern, responsive and professional websites.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/graphic-design.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="Graphic Design">
+                <div class="card-content">
+                    <h3>Graphic Design</h3>
+                    <p>Creative visuals for branding, social media and digital content.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/branding.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Branding">
+                <div class="card-content">
+                    <h3>Branding</h3>
+                    <p>Identity design that helps your business stand out.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/logo-design.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=800&q=80" alt="Logo Design">
+                <div class="card-content">
+                    <h3>Logo Design</h3>
+                    <p>Unique and memorable logos for your brand.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/cv-creation.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" alt="CV Creation">
+                <div class="card-content">
+                    <h3>CV Creation</h3>
+                    <p>Clean and attractive CV layouts tailored for your career goals.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/photography.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80" alt="Photography">
+                <div class="card-content">
+                    <h3>Photography</h3>
+                    <p>Professional photos for events, products and portraits.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/videography.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Videography">
+                <div class="card-content">
+                    <h3>Videography</h3>
+                    <p>High-quality videos for reels, promos and events.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/photo-editing.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=800&q=80" alt="Photo Editing">
+                <div class="card-content">
+                    <h3>Photo Editing</h3>
+                    <p>Professional enhancement and retouching for stunning results.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/business-card.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Business Card">
+                <div class="card-content">
+                    <h3>Business Card</h3>
+                    <p>Clean and premium business card design for your network.</p>
+                </div>
+            </div>
+        </a>
+        <a href="services/flyer-design.html" class="service-link">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=800&q=80" alt="Flyer Design">
+                <div class="card-content">
+                    <h3>Flyer Design</h3>
+                    <p>Attractive flyers for promotions, events and campaigns.</p>
+                </div>
+            </div>
+        </a>
     </div>
 </section>
 
@@ -166,27 +228,75 @@ gtag('config', 'G-CSVHPPVVKR');
 
     <h2>Our Portfolio</h2>
 
+    <div class="portfolio-filter">
+        <button onclick="filterSelection('all')">All</button>
+        <button onclick="filterSelection('website')">Web</button>
+        <button onclick="filterSelection('design')">Design</button>
+        <button onclick="filterSelection('photo')">Photography</button>
+        <button onclick="filterSelection('video')">Videography</button>
+    </div>
+
     <div class="portfolio-container">
 
-        <div class="portfolio-item">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Web Design project preview">
-            <div class="overlay">Web Design</div>
-        </div>
+        <a href="services/web-development.html" class="portfolio-link">
+            <div class="portfolio-card website">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Business Website Project">
+                <div class="portfolio-content">
+                    <h3>Business Website</h3>
+                    <p>Modern Responsive Website</p>
+                </div>
+            </div>
+        </a>
 
-        <div class="portfolio-item">
-            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Frame Design project preview">
-            <div class="overlay">Frame Design</div>
-        </div>
+        <a href="services/graphic-design.html" class="portfolio-link">
+            <div class="portfolio-card design">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Graphic Design Project">
+                <div class="portfolio-content">
+                    <h3>Brand Identity</h3>
+                    <p>Creative Graphic Design</p>
+                </div>
+            </div>
+        </a>
 
-        <div class="portfolio-item">
-            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="Branding project preview">
-            <div class="overlay">Branding</div>
-        </div>
+        <a href="services/branding.html" class="portfolio-link">
+            <div class="portfolio-card design">
+                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80" alt="Branding Project">
+                <div class="portfolio-content">
+                    <h3>Branding Project</h3>
+                    <p>Visual Identity & Strategy</p>
+                </div>
+            </div>
+        </a>
 
-        <div class="portfolio-item">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="UI Design project preview">
-            <div class="overlay">CV Creation</div>
-        </div>
+        <a href="services/photography.html" class="portfolio-link">
+            <div class="portfolio-card photo">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Photography Project">
+                <div class="portfolio-content">
+                    <h3>Photography Showcase</h3>
+                    <p>Professional Event Photography</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="services/videography.html" class="portfolio-link">
+            <div class="portfolio-card video">
+                <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Videography Project">
+                <div class="portfolio-content">
+                    <h3>Promo Video</h3>
+                    <p>Professional Videography</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="services/photo-editing.html" class="portfolio-link">
+            <div class="portfolio-card photo">
+                <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=800&q=80" alt="Photo Editing Project">
+                <div class="portfolio-content">
+                    <h3>Photo Retouching</h3>
+                    <p>Creative Editing & Enhancement</p>
+                </div>
+            </div>
+        </a>
 
     </div>
 
@@ -325,7 +435,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
     <div class="social-icons">
 
-        <a href="https://web.facebook.com/profile.php?id=61589064532478" target="_blank">
+        <a href="https://web.facebook.com/profile.php?id=61591672286391" target="_blank">
             <i class="fab fa-facebook-f"></i>
         </a>
         <a href="https://www.instagram.com/s.arularasi_2705/" target="_blank">

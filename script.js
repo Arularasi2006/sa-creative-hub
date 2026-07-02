@@ -75,16 +75,17 @@ const closeBtn = document.getElementById("closeBtn");
 
 function openImage(image){
 
-    lightbox.style.display="flex";
-
-    lightboxImg.src=image;
+    if (lightbox && lightboxImg) {
+        lightbox.style.display="flex";
+        lightboxImg.src=image;
+    }
 
 }
 
-closeBtn.onclick=function(){
-
-    lightbox.style.display="none";
-
+if (closeBtn && lightbox) {
+    closeBtn.onclick=function(){
+        lightbox.style.display="none";
+    }
 }
 window.addEventListener("scroll", function(){
 
@@ -99,11 +100,31 @@ window.addEventListener("scroll", function(){
 });
 const cursor = document.querySelector(".cursor");
 
-document.addEventListener("mousemove", (e) => {
+if (cursor) {
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+    });
+}
+function filterSelection(category){
 
-    cursor.style.left = e.clientX + "px";
-    cursor.style.top = e.clientY + "px";
+    const cards=document.querySelectorAll(".portfolio-card");
 
-});
+    cards.forEach(card=>{
 
+        if(category==="all"){
+            card.style.display="block";
+        }
+
+        else if(card.classList.contains(category)){
+            card.style.display="block";
+        }
+
+        else{
+            card.style.display="none";
+        }
+
+    });
+
+}
 
