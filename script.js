@@ -179,4 +179,9 @@ if (closeServiceBtn) {
         if (serviceModal) serviceModal.style.display = "none";
     };
 }
+function toggleMenu(){
+
+    document.getElementById("navMenu").classList.toggle("active");
+
+}
 
