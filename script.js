@@ -58,28 +58,33 @@ counters.forEach(counter => {
     updateCounter();
 
 });
+// Show loader until page ready; prevent scroll while loading
 window.addEventListener("load", function(){
+    const loader = document.getElementById("loader");
+    const content = document.getElementById("content");
+    if (loader) document.body.style.overflow = "hidden";
 
+    // small delay to allow animation, then reveal content
     setTimeout(function(){
-
-        document.getElementById("loader").style.display="none";
-
-        document.getElementById("content").style.display="block";
-
-    },2500);
-
+        if (loader) {
+            loader.style.opacity = "0";
+            setTimeout(function(){
+                loader.style.display = "none";
+                document.body.style.overflow = "auto";
+            }, 500);
+        }
+        if (content) content.style.display = "block";
+    }, 800);
 });
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");
 const closeBtn = document.getElementById("closeBtn");
 
-function openImage(image){
 
-    if (lightbox && lightboxImg) {
-        lightbox.style.display="flex";
-        lightboxImg.src=image;
-    }
-
+function openLightboxImage(image){
+    if (!lightbox || !lightboxImg) return;
+    lightbox.style.display = "flex";
+    lightboxImg.src = image;
 }
 
 if (closeBtn && lightbox) {
@@ -127,18 +132,18 @@ function filterSelection(category){
     });
 
 }
-function openImage(image){
-
-    document.getElementById("imageModal").style.display="flex";
-
-    document.getElementById("modalImage").src=image;
-
+function openImageModal(image){
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    if (!modal || !modalImg) return;
+    modal.style.display = "flex";
+    modalImg.src = image;
 }
 
 function closeImage(){
-
-    document.getElementById("imageModal").style.display="none";
-
+    const modal = document.getElementById("imageModal");
+    if (!modal) return;
+    modal.style.display = "none";
 }
 const serviceData = {
     web: {
@@ -166,9 +171,12 @@ function openService(service){
     document.getElementById("serviceModal").style.display="flex";
 }
 
-document.querySelector(".close-service").onclick=function(){
 
-    document.getElementById("serviceModal").style.display="none";
-
+const closeServiceBtn = document.querySelector(".close-service");
+if (closeServiceBtn) {
+    closeServiceBtn.onclick = function(){
+        const serviceModal = document.getElementById("serviceModal");
+        if (serviceModal) serviceModal.style.display = "none";
+    };
 }
 
