@@ -1879,3 +1879,37 @@ html {
     color:#ccc;
     line-height:1.8;
 }
+.process{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.process-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.process-card{
+    background:#111;
+    border:1px solid #333;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.process-card:hover{
+    transform:translateY(-8px);
+    border-color:#fff;
+}
+
+.process-card h3{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.process-card p{
+    color:#ccc;
+    line-height:1.7;
+}
