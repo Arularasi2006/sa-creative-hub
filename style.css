@@ -1922,3 +1922,37 @@ html {
 .social-links i:hover{
     transform:scale(1.2);
 }
+.featured-frame{
+    padding:80px 10%;
+}
+
+.frame-content{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.frame-content img{
+    flex:1;
+    max-width:450px;
+    width:100%;
+    border-radius:15px;
+}
+
+.frame-text{
+    flex:1;
+}
+
+.offer{
+    background:#fff;
+    color:#000;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.price{
+    margin:25px 0;
+    font-size:36px;
+}
