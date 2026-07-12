@@ -1,6 +1,8 @@
 const contactForm = document.getElementById("contactForm");
 const topBtn = document.getElementById("topBtn");
 const scriptUrl = "https://script.google.com/macros/s/AKfycbxcfoioB6LKAcdmzSkjsQpKHxQFtiuNYZWpeqH4DOvoB6zqIhnhBEXgzzwPujr_ztmc0w/exec";
+import { db } from "./firebase.js";
+import { collection, addDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
 if (contactForm) {
     contactForm.addEventListener("submit", function (e) {

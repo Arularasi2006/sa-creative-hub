@@ -551,34 +551,38 @@ gtag('config', 'G-CSVHPPVVKR');
 
     <h2>Request a Free Quote</h2>
 
-    <form>
+    <form action="https://formspree.io/f/xykrgqnq" method="POST">
 
-        <input type="text" placeholder="Your Name" required>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-        <input type="email" placeholder="Email Address" required>
+    <input type="email" name="email" placeholder="Email Address" required>
 
-        <input type="tel" placeholder="Phone Number">
+    <input type="tel" name="phone" placeholder="Phone Number">
 
-        <select required>
-            <option value="">Select a Service</option>
-            <option>Website Development</option>
-            <option>Graphic Design</option>
-            <option>Branding</option>
-            <option>Logo Design</option>
-            <option>Photography</option>
-            <option>Videography</option>
-            <option>Photo Editing</option>
-            <option>CV Creation</option>
-            <option>Business Card Design</option>
-            <option>Flyer Design</option>
-            <option>Social Media Design</option>
-        </select>
+    <select name="service" required>
+        <option value="">Select a Service</option>
+        <option>Website Development</option>
+        <option>Graphic Design</option>
+        <option>Branding</option>
+        <option>Logo Design</option>
+        <option>Photography</option>
+        <option>Videography</option>
+        <option>Photo Editing</option>
+        <option>CV Creation</option>
+        <option>Business Card Design</option>
+        <option>Flyer Design</option>
+        <option>Social Media Design</option>
+    </select>
 
-        <textarea placeholder="Tell us about your project..." rows="6"></textarea>
+    <textarea
+        name="message"
+        placeholder="Tell us about your project..."
+        rows="6"
+        required></textarea>
 
-        <button type="submit">Request Quote</button>
+    <button type="submit">Request Quote</button>
 
-    </form>
+</form>
 
 </section>
 
@@ -594,7 +598,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
 </div>
 
-        <form id="contactForm">
+        <form action="https://formspree.io/f/xykrgqnq" method="POST">
 
     <input type="text" name="name" placeholder="Your Name" required>
 
@@ -730,7 +734,7 @@ gtag('config', 'G-CSVHPPVVKR');
 </footer>
 
 
-<script src="script.js"></script>
+<script type="module" src="js/script.js"></script>
 
 <div id="lightbox">
 
