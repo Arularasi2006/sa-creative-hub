@@ -58,12 +58,8 @@ gtag('config', 'G-CSVHPPVVKR');
     <p>Create • Design • Develop</p>
 
 </div>
-<div id="content">
 
-    <Create • Design • Develop>
-
-</div>
-    <header>
+<header>
     <div class="logo">
         <img src="images/logo.jpg" alt="SA CREATIVE HUB Logo">
         <h2>SA CREATIVE HUB</h2>
@@ -88,13 +84,13 @@ gtag('config', 'G-CSVHPPVVKR');
         </ul>
 
         <div class="menu-icon" id="menuIcon">
-        ☰
-    </div>
+            ☰
+        </div>
     </nav>
 
     <div class="menu-toggle" id="menuToggle">
-    ☰
-</div>
+        ☰
+    </div>
 </header>
 
 <section id="home" class="hero">
@@ -147,8 +143,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
 </section>
 
-<section class="services" id="services">
-    <section id="services" class="services" data-aos="fade-up"></section>
+<section id="services" class="services" data-aos="fade-up">
     <h2>Our Services</h2>
     <div class="service-container">
         <a href="services/web-development.html" class="service-link" onclick="event.preventDefault(); openService('web')">
@@ -324,8 +319,7 @@ gtag('config', 'G-CSVHPPVVKR');
     </div>
 
 </section>
-
-<section class="portfolio" id="portfolio">
+y
 
     <section class="stats">
 
@@ -348,10 +342,11 @@ gtag('config', 'G-CSVHPPVVKR');
         <h2>100%</h2>
         <p>Customer Satisfaction</p>
     </div>
+    
 
 </section>
 
-    <section class="portfolio" data-aos="zoom-in"></section>
+    <section id="portfolio" class="portfolio" data-aos="zoom-in">
 
     <h2>Our Portfolio</h2>
 
@@ -464,9 +459,7 @@ gtag('config', 'G-CSVHPPVVKR');
     View All Projects →
 </a>
 
-<section class="about" id="about">
-
-    <section class="about" data-aos="fade-right"></section>
+<section id="about" class="about" data-aos="fade-right">
 
     <div class="about-text">
         <h2>About SA CREATIVE HUB</h2>
@@ -493,9 +486,7 @@ gtag('config', 'G-CSVHPPVVKR');
 
 </section>
 
-<section class="reviews" id="reviews">
-
-    <section class="reviews" data-aos="fade-left"></section>
+<section id="reviews" class="reviews" data-aos="fade-left">
 
     <h2>What Our Clients Say</h2>
 
@@ -544,6 +535,7 @@ gtag('config', 'G-CSVHPPVVKR');
         loading="lazy"
         referrerpolicy="strict-origin-when-cross-origin">
     </iframe>
+    </section>
 
 </section>
 
@@ -586,8 +578,6 @@ gtag('config', 'G-CSVHPPVVKR');
 
 </section>
 
-    <section class="contact" data-aos="fade-up"></section>
-
     <h2>Contact Us</h2>
 
     <div class="contact-cards">
@@ -596,23 +586,36 @@ gtag('config', 'G-CSVHPPVVKR');
     <i class="fa-solid fa-envelope"></i>sivaarularasi27@gmail.com
     <i class="fa-solid fa-map-marker-alt"></i>Velanai  , Jaffna, Sri Lanka</p>
 
-</div>
+    </div>
 
-        <form action="https://formspree.io/f/xykrgqnq" method="POST">
+<form action="https://formspree.io/f/xykrgqnq" method="POST">
 
     <input type="text" name="name" placeholder="Your Name" required>
 
-    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="email" name="email" placeholder="Email Address" required>
 
-    <textarea name="message" placeholder="Your Message" required></textarea>
+    <input type="tel" name="phone" placeholder="Phone Number">
 
-    <button type="submit">Send Message</button>
+    <select name="service" required>
+        <option value="">Select a Service</option>
+        <option>Website Development</option>
+        <option>Graphic Design</option>
+        <option>Branding</option>
+        <option>Logo Design</option>
+        <option>Photography</option>
+        <option>Videography</option>
+        <option>Photo Editing</option>
+        <option>CV Creation</option>
+        <option>Business Card Design</option>
+        <option>Flyer Design</option>
+        <option>Social Media Design</option>
+    </select>
+
+    <textarea name="message" placeholder="Tell us about your project..." rows="6" required></textarea>
+
+    <button type="submit">Request Quote</button>
 
 </form>
-
-    </div>
-
-</section>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
@@ -734,7 +737,7 @@ gtag('config', 'G-CSVHPPVVKR');
 </footer>
 
 
-<script type="module" src="js/script.js"></script>
+<script src="script.js"></script>
 
 <div id="lightbox">
 

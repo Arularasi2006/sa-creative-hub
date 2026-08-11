@@ -1,8 +1,6 @@
 const contactForm = document.getElementById("contactForm");
 const topBtn = document.getElementById("topBtn");
 const scriptUrl = "https://script.google.com/macros/s/AKfycbxcfoioB6LKAcdmzSkjsQpKHxQFtiuNYZWpeqH4DOvoB6zqIhnhBEXgzzwPujr_ztmc0w/exec";
-import { db } from "./firebase.js";
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js";
 
 if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
@@ -60,23 +58,15 @@ counters.forEach(counter => {
     updateCounter();
 
 });
-// Show loader until page ready; prevent scroll while loading
-window.addEventListener("load", function(){
+window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
-    const content = document.getElementById("content");
-    if (loader) document.body.style.overflow = "hidden";
 
-    // small delay to allow animation, then reveal content
-    setTimeout(function(){
-        if (loader) {
-            loader.style.opacity = "0";
-            setTimeout(function(){
-                loader.style.display = "none";
-                document.body.style.overflow = "auto";
-            }, 500);
-        }
-        if (content) content.style.display = "block";
-    }, 800);
+    if (loader) {
+        setTimeout(() => {
+            loader.style.display = "none";
+            document.body.style.overflow = "auto";
+        }, 1000);
+    }
 });
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightboxImg");

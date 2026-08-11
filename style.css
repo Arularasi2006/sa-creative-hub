@@ -54,7 +54,7 @@ nav ul li a:hover{
     min-height:85vh;
     background:
         linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-        url("../images/web-bg.jpg");
+        url("images/hero-bg.jpg");
     background-size:cover;
     background-position:center;
     display:flex;
@@ -692,7 +692,7 @@ html {
     height:160px;
     object-fit:cover;
     border-radius:50%;
-    animation:zoom 2s infinite;
+    animation:none;
 }
 
 #loader h2{
@@ -1523,7 +1523,7 @@ html {
     font-weight:bold;
     color:#fff;
     letter-spacing:3px;
-    animation:pulse 1.5s infinite;
+    animation:none;
 }
 
 @keyframes pulse{
@@ -1618,41 +1618,7 @@ html {
 .policy h1{
     margin-bottom:30px;
 }
-.quote{
-    padding:80px 10%;
-}
 
-.quote h2{
-    text-align:center;
-    margin-bottom:30px;
-}
-
-.quote form{
-    max-width:700px;
-    margin:auto;
-}
-
-.quote input,
-.quote select,
-.quote textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:20px;
-    border:1px solid #444;
-    border-radius:8px;
-    background:#111;
-    color:#fff;
-}
-
-.quote button{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    font-size:16px;
-    font-weight:bold;
-}
 .pricing{
     padding:80px 10%;
     text-align:center;
